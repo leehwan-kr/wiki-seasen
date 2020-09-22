@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>계절-계절변화</title>
+  <style>
+    #wiki {
+      font-size: 30px;
+      text-align: left;
+      height: 40px;
+      padding-left: 27px;
+      font-weight: bold;
+    }
+
+    #wikisulmung {
+      text-align: left;
+      padding-left: 11px;
+      width: 150px;
+      height: 22px;
+    }
+
+    #logoimg {
+      text-align: left;
+      padding-left: 15px;
+    }
+
+    #logo {
+      display: grid;
+      grid-template-rows: 1fr 40px 30px;
+    }
+
+    #title {
+      font-size: 32px;
+      height: 60px;
+      padding-left: 15px;
+      padding-top: 20px;
+      font-weight: bold;
+    }
+
+    #layout {
+      display: grid;
+      grid-template-columns: 200px 1fr
+    }
+
+    #mainlogo {
+      border-right: 1px solid black;
+      margin-right: 20px;
+      height: 700px
+    }
+
+    #index {
+      border: 1px solid black;
+      width: 200px;
+      padding-left: 0px;
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(32, 105, 128);
+    }
+
+    #seasensulmung {
+      padding-bottom: 20px;
+    }
+
+    #justis {
+      font-size: 15px;
+    }
+
+    #justissulmung {
+      font-size: 16px;
+      padding-right: 20px;
+    }
+
+    #seasenimg {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      border: 1px solid black;
+    }
+
+    #spring {
+      border-right: 1px solid black;
+    }
+
+    .springimg {
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 5px;
+      height: 149px;
+    }
+
+    .springtext {
+      text-align: center;
+    }
+
+    #summer {
+
+      border-right: 1px solid black;
+    }
+
+    .summerimg {
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 5px;
+      height: 149px;
+    }
+
+    .summertext {
+      text-align: center;
+    }
+
+    #autumn {
+
+      border-right: 1px solid black;
+    }
+
+    .autumnimg {
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 5px;
+      height: 149px;
+    }
+
+    .autumntext {
+      text-align: center;
+    }
+
+    #winter {}
+
+    .winterimg {
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 5px;
+      height: 149px;
+    }
+
+    .wintertext {
+      text-align: center;
+    }
+
+    #chunmun {
+      height: 500px
+    }
+
+    #seasenimgmini{
+      display: none;
+    }
+
+
+    @media(min-width:670px) and (max-width:1075px){
+      #seasenimg{
+        display: none;
+      }
+      #seasenimgmini{
+        display: block;
+      }
+      .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid black;
+      }
+      .bot{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid black;
+        border-top: none;
+      }
+      #springmini{
+        border-right: 1px solid black;
+      }
+
+      #autumnmini{
+        border-right: 1px solid black;
+      }
+      #mainlogo {
+        border-right: 1px solid black;
+        margin-right: 20px;
+        height: 800px
+      }
+    }
+
+    @media (max-width:670px){
+      #seasenimg{
+        display: none;
+      }
+      #seasenimgmini{
+        display: block;
+      }
+
+      #springmini{
+        border: 1px solid black;
+      }
+
+      #autumnmini{
+        border: 1px solid black;
+        border-top: none;
+      }
+      #summermini{
+        border: 1px solid black;
+        border-top: none;
+      }
+
+      #wintermini{
+
+        border: 1px solid black;
+        border-top: none;
+      }
+      #mainlogo {
+        border-right: 1px solid black;
+        margin-right: 20px;
+        height: 1250px;
+      }
+
+    }
+    #zun{
+      color: rgba(0, 0, 0, 0.30);
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div id="layout">
+
+    <div id="mainlogo">
+
+      <div id="logo">
+
+        <div id="logoimg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/150px-Wikipedia-logo-v2.svg.png" alt="이미지 오류남ㅅㄱ">
+        </div>
+
+        <div id="wiki">
+          위키백과
+        </div>
+
+        <div id="wikisulmung">
+          우리모두의 백과사전
+        </div>
+      </div>
+    </div>
+
+    <div id="seasen">
+
+      <div id="title">
+        <a href="seasen.html">계절</a><br>
+      </div>
+
+      <div id="line">
+        <hr>
+      </div>
+
+      <div id="seasensulmung">
+        계절(季節) 또는 철은 한 해를 날씨의 변화에 따라 나눈 것이다.
+
+      </div>
+
+      <div id="index">
+
+        <ol>
+          <a id="zun" href="seasen.html">전체보기</a>
+          <li><a href="justis.html">정의</a></li>
+          <li><a href="change.html">계절 변화</a></li>
+          <li><a href="cosmos.html">천문학적 계절변화</a></li>
+
+        </ol>
+
+
+      </div>
+
+      <!--<div id="justis">
+        <h1>정의</h1>
+
+        <div id="line">
+          <hr>
+        </div>
+
+        <div id="justissulmung">
+          온대 지방에서는 봄, 여름, 가을, 겨울의 네 계절로 열대나 아열대 지방에서는 강수량의 변화에 따라 우기(또는 몬순)와 건기로 나눈다. 한대 지방에서는 낮과 밤의 길이의 변화에 따라 백야와 극야로 나눈다.
+
+          고대 이집트에서는 홍수철, 경작철, 수확철의 세 계절로 나누었다. 오스트레일리아의 원주민 중에는 여섯 계절로 나누는 도 있다. 스칸디나비아의 사미족은 여덟 이상의 계절로 나누었다.
+        </div>
+      </div>-->
+
+
+      <div id="change">
+        <div id="changesulmung">
+          <h1>계절 변화</h1>
+
+          <div id="line">
+            <hr>
+          </div>
+
+          <div id="imgsulmung">
+            맨체스터 거리의 전통적인 계절 변화
+          </div>
+
+          <div id="seasenimg">
+            <div id="spring">
+              <div class="springimg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Upper_Chorlton_Road_in_the_spring.jpg/199px-Upper_Chorlton_Road_in_the_spring.jpg" alt="이미지 깨짐 ㅅㄱ">
+              </div>
+              <div class="springtext">
+                봄
+              </div>
+            </div>
+
+            <div id="summer">
+              <div class="summerimg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Upper_Chorlton_Road_in_the_summer_rain.JPG/199px-Upper_Chorlton_Road_in_the_summer_rain.JPG" alt="이미지 깨짐 ㅅㄱ">
+              </div>
+              <div class="summertext">
+                여름
+              </div>
+
+            </div>
+
+
+            <div id="autumn">
+              <div class="autumnimg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Upper_Chorlton_Road_in_the_autumn.jpg/199px-Upper_Chorlton_Road_in_the_autumn.jpg" alt="이미지 깨짐 ㅅㄱ">
+              </div>
+              <div class="autumntext">
+                가을
+              </div>
+            </div>
+
+
+            <div id="winter">
+              <div class="winterimg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Upper_Chorlton_Road_in_the_Snow.jpg/199px-Upper_Chorlton_Road_in_the_Snow.jpg" alt="이미지 깨짐 ㅅㄱ">
+              </div>
+              <div class="wintertext">
+                겨울
+              </div>
+            </div>
+
+          </div>
+
+                      <div id="seasenimgmini">
+                        <div class="top">
+
+                          <div id="springmini">
+                            <div class="springimg">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Upper_Chorlton_Road_in_the_spring.jpg/199px-Upper_Chorlton_Road_in_the_spring.jpg" alt="이미지 깨짐 ㅅㄱ">
+                            </div>
+                            <div class="springtext">
+                              봄
+                            </div>
+                          </div>
+
+                          <div id="summermini">
+                            <div class="summerimg">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Upper_Chorlton_Road_in_the_summer_rain.JPG/199px-Upper_Chorlton_Road_in_the_summer_rain.JPG" alt="이미지 깨짐 ㅅㄱ">
+                            </div>
+                            <div class="summertext">
+                              여름
+                            </div>
+                          </div>
+
+                      </div>
+
+                      <div class="bot">
+
+                        <div id="autumnmini">
+                          <div class="autumnimg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Upper_Chorlton_Road_in_the_autumn.jpg/199px-Upper_Chorlton_Road_in_the_autumn.jpg" alt="이미지 깨짐 ㅅㄱ">
+                          </div>
+                          <div class="autumntext">
+                            가을
+                          </div>
+                        </div>
+
+
+                        <div id="wintermini">
+                          <div class="winterimg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Upper_Chorlton_Road_in_the_Snow.jpg/199px-Upper_Chorlton_Road_in_the_Snow.jpg" alt="이미지 깨짐 ㅅㄱ">
+                          </div>
+                          <div class="wintertext">
+                            겨울
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+      <!--<div id="cosmos">
+        <h1>천문학적 계절변화</h1>
+      </div>
+      <div id="line">
+        <hr>
+      </div>
+      <img id="chunmun" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Seasons1.svg" alt="오류남ㅅㄱ" style="max-width: 70%; height: auto;">
+        --></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
